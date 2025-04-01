@@ -1,6 +1,6 @@
 # Interactive Rating Component
 
-<h6><a href="#readme-pt-br">🇧🇷: Leia este documento em português</a></h6>
+<h6><a href="https://github.com/Flavio-sv/Interactive-Rating-Component/blob/main/README-pt-br.md">🇧🇷: Leia este documento em português </a></h6>
 
 This interactive rating component was developed using **HTML**, **CSS**, and **JavaScript** as part of the challenges proposed by [Frontend Mentor](https://www.frontendmentor.io/).
 
