@@ -4,17 +4,12 @@ const ratingState = document.querySelector(".rating-state");
 const thankYouState = document.querySelector(".thank-you-state");
 const selectedRatingText = document.querySelector(".selected-rating-feedback");
 const thankYouTitle = document.querySelector("#thank-you-title");
-
 let selectedRating = null;
 
-// Add keyboard navigation and accessibility features to rating circles
 circles.forEach((circle) => {
   const input = circle.querySelector('input[type="radio"]');
-  
-  // Make circles keyboard focusable
+
   circle.setAttribute("tabindex", "0");
-  
-  // Click event handler
   circle.addEventListener("click", () => {
     selectedRating = input.value;
 
@@ -27,8 +22,7 @@ circles.forEach((circle) => {
     circle.classList.add("active");
     input.checked = true;
   });
-  
-  // Keyboard event handler for accessibility
+
   circle.addEventListener("keydown", (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
@@ -43,16 +37,13 @@ submitButton.addEventListener("click", (event) => {
   if (selectedRating) {
     selectedRatingText.textContent = `You selected ${selectedRating} out of 5`;
     selectedRatingText.setAttribute("aria-live", "polite");
-
     ratingState.style.display = "none";
     thankYouState.style.display = "flex";
     ratingState.setAttribute("aria-hidden", "true");
     thankYouState.setAttribute("aria-hidden", "false");
-
-    // Focus management for screen readers
     thankYouTitle.focus();
     thankYouTitle.setAttribute("tabindex", "-1");
-    thankYouTitle.removeAttribute("tabindex"); // Remove tabindex after focus
+    thankYouTitle.removeAttribute("tabindex");
   } else {
     const existingError = document.querySelector(".error-message");
     if (existingError) {
@@ -64,8 +55,7 @@ submitButton.addEventListener("click", (event) => {
     errorMessage.classList.add("error-message");
     errorMessage.setAttribute("role", "alert");
     errorMessage.setAttribute("aria-live", "assertive");
-
-    // Append error message inside the form for better semantic structure
+    
     const form = document.querySelector("form");
     form.appendChild(errorMessage);
 
@@ -81,7 +71,6 @@ submitButton.addEventListener("click", (event) => {
   }
 });
 
-// Add accessibility support for the submit button
 submitButton.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
