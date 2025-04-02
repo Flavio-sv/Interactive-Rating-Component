@@ -29,7 +29,7 @@ body {
 main {
   width: 418px;
   height: 422px;
-  margin-top: 4px;
+  margin-top: 6px;
   border-radius: 32px;
   background: radial-gradient(circle at top, rgba(36, 43, 53, 1), rgba(23, 30, 40, 0.79));
   border: 3px solid #111518;
