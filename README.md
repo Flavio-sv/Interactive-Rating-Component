@@ -2,7 +2,7 @@
 
 <h6><a href="https://github.com/Flavio-sv/Interactive-Rating-Component/blob/main/README-pt-br.md">🇧🇷: Leia este documento em português </a></h6>
 
-This interactive rating component was developed using **HTML**, **CSS**, and **JavaScript** as part of the challenges proposed by [Frontend Mentor]([https://www.frontendmentor.io/](https://www.frontendmentor.io/solutions/interactive-rating-component-with-accessible-javascript-and-responsive-7I7oL_akCk)).
+This interactive rating component was developed using **HTML**, **CSS**, and **JavaScript** as part of the challenges proposed by [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-with-accessible-javascript-and-responsive-7I7oL_akCk).
 
 ## Project Overview
 
